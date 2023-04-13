@@ -57,13 +57,13 @@ function App() {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-      user: 'your-email@gmail.com',
-      pass: 'your-email-password'
+      user: 'your-email@gmail.com', //Engenius credentials
+      pass: 'your-email-password' 
     }
   });
   const mailOptions = {
-    from: 'your-email@gmail.com',
-    to: `${email}`,
+    from: 'your-email@gmail.com', //engenius eamil
+    to: `${email}`, //user email
     subject: 'Test Email',
     text: `Welcome to Engenius Your new password is: ${password}`
   };
